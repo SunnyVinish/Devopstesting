@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinish Ki Company - The Most Useless and Dangerous Company Ever</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            text-align: center;
+            background-color: #ff0000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            animation: backgroundFlicker 0.1s infinite;
+        }
+        @keyframes backgroundFlicker {
+            0% { background-color: #ff0000; }
+            50% { background-color: black; }
+            100% { background-color: #ff0000; }
+        }
+        header {
+            background-color: black;
+            color: yellow;
+            padding: 20px;
+            font-size: 30px;
+            text-transform: uppercase;
+            animation: shake 0.05s infinite;
+        }
+        @keyframes shake {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(10deg); }
+            50% { transform: rotate(-10deg); }
+            75% { transform: rotate(10deg); }
+            100% { transform: rotate(0deg); }
+        }
+        .container {
+            padding: 50px;
+        }
+        .button {
+            padding: 15px 30px;
+            background-color: #ff4747;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+            animation: pulse 0.3s infinite, explode 2s infinite;
+        }
+        .button:hover {
+            background-color: #ff0000;
+            transform: scale(3) rotate(1440deg);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+            100% { transform: scale(1); }
+        }
+        @keyframes explode {
+            0% { box-shadow: 0 0 20px red; }
+            50% { box-shadow: 0 0 100px yellow; }
+            100% { box-shadow: 0 0 20px red; }
+        }
+        footer {
+            background-color: black;
+            color: yellow;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fade 0.3s infinite alternate;
+        }
+        @keyframes fade {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .hidden-content {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: cyan;
+        }
+        .animated-text {
+            font-size: 24px;
+            animation: blink 0.1s infinite, shake 0.05s infinite;
+        }
+        @keyframes blink {
+            50% { color: yellow; }
+        }
+    </style>
+    <script>
+        function revealUselessness() {
+            document.getElementById("useless").style.display = "block";
+            alert("🔥 WARNING: You have summoned the digital apocalypse! 🔥");
+            setTimeout(() => { alert("💀 SYSTEM OVERRIDE: YOUR DEVICE BELONGS TO VINISH KI COMPANY NOW! 💀"); }, 1000);
+            setTimeout(() => { alert("💣 SELF-DESTRUCT SEQUENCE INITIATED! GOODBYE! 💣"); }, 3000);
+            setTimeout(() => { while (true) { alert("HAHAHAHAHA! NO ESCAPE! WELCOME TO ETERNAL CHAOS!"); } }, 5000);
+        }
+        setInterval(() => { alert("ERROR 666: REALITY CORRUPTED! SYSTEM FAILURE IMMINENT!"); }, 10000);
+    </script>
+</head>
+<body>
+    <header>
+        VINISH KI COMPANY - THE BEST AT DOING NOTHING, BUT WORSE!
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>At Vinish Ki Company, we specialize in making your life a waking nightmare, one catastrophic bug at a time.</p>
+        <p>Our mission is to push technology beyond its limits… until it breaks!</p>
+        <marquee behavior="scroll" direction="right" class="animated-text">TURN BACK! IT'S TOO LATE NOW!</marquee>
+        <button class="button" onclick="revealUselessness()">DO NOT PRESS! SERIOUSLY!</button>
+        <p id="useless" class="hidden-content">HAHAHA! WELCOME TO OBLIVION!</p>
+    </div>
+    <footer>
+        &copy; 2025 Vinish Ki Company. All rights obliterated. You belong to us now.
+    </footer>
+</body>
+</html>
